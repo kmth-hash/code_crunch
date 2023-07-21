@@ -5,7 +5,7 @@ m = int(input())
 ls = []
 for i in range(m):
     ls.append(input().split())
-# print(ls)
+
 
 for i in ls:
     if i[0]=='pop':

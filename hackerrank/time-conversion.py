@@ -1,4 +1,4 @@
-#https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?isFullScreen=true
+#https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?
 
 import math
 import os

@@ -1,5 +1,5 @@
 #https://www.hackerrank.com/challenges/frequency-queries/problem?isFullScreen=true
-
+# partially working --> needs work 
 #!/bin/python3
 
 import math

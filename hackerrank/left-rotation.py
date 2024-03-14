@@ -12,6 +12,13 @@ import sys
 def rotLeft(a, d):
     return a[d:]+a[:d]
 
+#Method 2 
+
+# def rotateLeft(d, arr):
+#     for i in range(d):
+#         arr.append(arr.pop(0))
+#     return(arr)
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

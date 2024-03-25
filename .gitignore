@@ -1,1 +1,5 @@
 dont-push.py
+
+*.pyc
+
+__pycache__

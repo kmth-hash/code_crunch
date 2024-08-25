@@ -19,3 +19,18 @@ class Solution:
         ls = []
         self.traversal(root, ls)
         return ls
+# Method 2 
+# class Solution:
+#     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+#         res = []
+
+#         def dp(curr) : 
+#             nonlocal res
+#             if not curr : 
+#                 return 
+#             dp(curr.left)
+#             dp(curr.right)
+#             res.append(curr.val)
+#         dp(root)
+#         return res
+

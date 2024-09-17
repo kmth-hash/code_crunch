@@ -8,7 +8,16 @@ class Solution :
             ls[i],ls[minInd] = ls[minInd],ls[i]
         return ls
 
-
+    def bubble_sort(self,ls) : 
+        ln = len(ls)
+        for i in range(ln) : 
+            for j in range(1,ln) : 
+                if ls[j]<ls[j-1] :  
+                    ls[j-1],ls[j]=ls[j],ls[j-1]
+            # print(ls)
+        return ls        
+                
+        
 
 inputTestCases = [
     [2,3,5,1,4,8,7] , 
@@ -23,7 +32,9 @@ inputTestCases = [
 obj = Solution()
 for eachTC in inputTestCases : 
     print(f'Testcase : {eachTC}')
-    res = obj.selection_sort(eachTC)
-    print('Selection sort : ',res)
-    
+    # res = obj.selection_sort(eachTC)
+    # print('Selection sort : ',res)
+    res = obj.bubble_sort(eachTC)
+    print('Bubble Sort : ',res)
+    break
     

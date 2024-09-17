@@ -11,12 +11,15 @@ class Solution :
     def bubble_sort(self,ls) : 
         ln = len(ls)
         for i in range(ln) : 
+            flag = False
             for j in range(1,ln) : 
                 if ls[j]<ls[j-1] :  
                     ls[j-1],ls[j]=ls[j],ls[j-1]
+                    flag = True 
+            if not flag : 
+                break
             # print(ls)
-        return ls        
-                
+        return ls      
         
 
 inputTestCases = [
@@ -36,5 +39,5 @@ for eachTC in inputTestCases :
     # print('Selection sort : ',res)
     res = obj.bubble_sort(eachTC)
     print('Bubble Sort : ',res)
-    break
+    # break
     

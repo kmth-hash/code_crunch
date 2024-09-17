@@ -20,7 +20,18 @@ class Solution :
                 break
             # print(ls)
         return ls      
-        
+    def insertion_sort(self,ls) : 
+        for i in range(1, len(ls)):
+            key = ls[i]
+            j = i - 1
+
+            while j >= 0 and key < ls[j]:
+                ls[j + 1] = ls[j]
+                j -= 1
+            ls[j + 1] = key
+            # print(ls)
+        return ls
+
 
 inputTestCases = [
     [2,3,5,1,4,8,7] , 
